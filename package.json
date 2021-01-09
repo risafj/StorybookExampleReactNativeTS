@@ -9,22 +9,34 @@
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint . --fix --ext .js,.jsx,.ts,.tsx",
-    "lint:ts": "tsc -p tsconfig.json"
+    "lint:ts": "tsc -p tsconfig.json",
+    "storybook": "start-storybook -p 7007",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@react-native-community/async-storage": "^1.12.1",
     "react": "16.13.1",
-    "react-native": "0.63.3"
+    "react-native": "0.63.3",
+    "react-native-config": "^1.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "@babel/runtime": "^7.8.4",
     "@react-native-community/eslint-config": "^1.1.0",
+    "@storybook/addon-actions": "^5.3",
+    "@storybook/addon-knobs": "^5.3",
+    "@storybook/addon-links": "^5.3",
+    "@storybook/addon-ondevice-actions": "^5.3.23",
+    "@storybook/addon-ondevice-knobs": "^5.3.23",
+    "@storybook/react-native": "^5.3.23",
+    "@storybook/react-native-server": "^5.3.23",
     "@types/jest": "^25.2.3",
     "@types/react-native": "^0.63.2",
     "@types/react-test-renderer": "^16.9.2",
     "@typescript-eslint/eslint-plugin": "4",
     "@typescript-eslint/parser": "^2.27.0",
     "babel-jest": "^25.1.0",
+    "babel-loader": "^8.2.2",
     "eslint": "7",
     "eslint-config-prettier": "^7.1.0",
     "eslint-config-standard-with-typescript": "^19.0.1",
@@ -36,6 +48,7 @@
     "eslint-plugin-standard": "4",
     "jest": "^25.1.0",
     "metro-react-native-babel-preset": "^0.59.0",
+    "react-dom": "16.13.1",
     "react-test-renderer": "16.13.1",
     "typescript": "^3.8.3"
   },
