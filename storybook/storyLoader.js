@@ -4,10 +4,10 @@
 // https://github.com/elderfo/react-native-storybook-loader.git
 
 function loadStories() {
-  require('./stories/index');
+  require('../src/components/atoms/Gravatar.stories');
 }
 
-const stories = ['./stories/index'];
+const stories = ['../src/components/atoms/Gravatar.stories'];
 
 module.exports = {
   loadStories,
