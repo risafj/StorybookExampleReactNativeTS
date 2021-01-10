@@ -5,11 +5,13 @@
 
 function loadStories() {
   require('../src/components/atoms/CustomButton.stories');
+  require('../src/components/atoms/CustomText.stories');
   require('../src/components/atoms/Gravatar.stories');
 }
 
 const stories = [
   '../src/components/atoms/CustomButton.stories',
+  '../src/components/atoms/CustomText.stories',
   '../src/components/atoms/Gravatar.stories',
 ];
 
